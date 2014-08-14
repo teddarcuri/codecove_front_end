@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="16px" viewBox="0 0 25 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Collection-View" sketch:type="MSArtboardGroup" transform="translate(-98.000000, -9.000000)" fill="#45A0B2">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(98.000000, 9.000000)">
+                <ellipse id="Oval-32" sketch:type="MSShapeGroup" cx="2.18127613" cy="1.7256588" rx="1.7256588" ry="1.7256588"></ellipse>
+                <ellipse id="Oval-30" sketch:type="MSShapeGroup" cx="2.18127613" cy="7.62027387" rx="1.7256588" ry="1.7256588"></ellipse>
+                <ellipse id="Oval-31" sketch:type="MSShapeGroup" cx="2.18127613" cy="14.1698462" rx="1.7256588" ry="1.7256588"></ellipse>
+                <rect id="Rectangle-82" sketch:type="MSShapeGroup" x="6.05182254" y="0" width="18.3388025" height="2.61982892" rx="5"></rect>
+                <rect id="Rectangle-82" sketch:type="MSShapeGroup" x="6.05182254" y="6.54957231" width="18.3388025" height="2.61982892" rx="5"></rect>
+                <rect id="Rectangle-82" sketch:type="MSShapeGroup" x="6.05182254" y="13.0991446" width="18.3388025" height="2.61982892" rx="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

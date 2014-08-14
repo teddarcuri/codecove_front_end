@@ -1,0 +1,41 @@
+// CSS Browser reset
+@import "config/normalize";
+
+// Pesticide CSS Debugger
+//@import "config/pesticide";
+
+@import "bourbon";
+
+// Settings | Mixins, Variables
+@import "config/variables";
+@import "config/mixins";
+
+// Structural Elements
+@import "partials/sidebar";
+@import "partials/console";
+@import "partials/search_overlay";
+
+// Components
+@import "components/search_form";
+@import "components/code_window";	
+
+//////////////////////////////////////////////////////
+// Reset Everything to use Proxima Nova and Box Sizing
+//////////////////////////////////////////////////////
+* {
+	font-family: 'Proxima Nova';
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+////////////////////////////////////////////////
+// This global app wrapper uses Flexbox which 
+// allows the sidebar and the main console to 
+// resize fluidly with each other
+///////////////////////////////////////////////
+.app-container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	bottom: 0; 
+	@include display(flex);
+}
