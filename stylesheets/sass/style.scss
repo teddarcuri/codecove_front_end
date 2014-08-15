@@ -4,6 +4,7 @@
 // Pesticide CSS Debugger
 //@import "config/pesticide";
 
+// Bourbon Sass Library
 @import "bourbon";
 
 // Settings | Mixins, Variables
@@ -18,6 +19,10 @@
 // Components
 @import "components/search_form";
 @import "components/code_window";	
+@import "components/codemirror";
+
+// Codemirror themes
+@import "codemirror_themes/neo.scss";	
 
 //////////////////////////////////////////////////////
 // Reset Everything to use Proxima Nova and Box Sizing

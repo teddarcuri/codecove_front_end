@@ -44,129 +44,1000 @@
 		</div>
 
 		<div class="search-overlay">
-			<h1>Search</h1>
-			<hr>
+			<span>Searching For:</span>
+			<h1 class="search-display">Search</h1>
 		</div>
 
 		<div id="main-container">
+
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						The Gruntfile.js that we used for making our stuff look cool and stuff or whatever
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea">module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 			<div class="code-window">
 				<div class="code-window-toolbar">
+					<div class="code-window-info">
+						My favorite Gruntfile.js
+					</div>
 					<div class="code-window-controls">
 						<div class="maximize"></div>
 						<div class="minimize"></div>
-						<div class="close"></div>
+					
 					</div>
 				</div>
 
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<textarea name="" class="codemirror-textarea" >module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Spin up server
+    connect: {
+      uses_defaults: {}
+    },
+
+    // Javscript Concatenation
+    uglify: {
+      build: {
+        src: 'javascripts/*.js',
+        dest: 'javascripts/build/global.min.js'
+      }
+    },
+
+    // Sass Processing
+    sass: {
+      dist: {
+        options: {
+          // Compressed output
+          style: 'expanded',
+          // Include Bourbon & Neat
+          loadPath: require('node-neat').includePaths,
+        },
+        files: {
+          'stylesheets/style.css' : 'stylesheets/sass/style.scss'
+        }
+      }
+    },
+
+    // Auto Reloading
+    watch: {
+      files: ['*'],
+      options: {
+        livereload: true,
+      },
+      scripts: {
+        files: ['javascripts/*.js'],
+        tasks: ['uglify'],
+      },
+      css: {
+        files: '**/sass/**',
+        tasks: ['sass'],
+      },
+    },
+
+    imagemin: {                          // Task
+      dynamic: {  
+        options: {                       // Target options
+          optimizationLevel: 3,
+        }, 
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.*'],   // Actual patterns to match
+          dest: 'images/'                  // Destination path prefix
+        }]
+      }
+    }
+
+  });
+
+  // Serve an HTTP server
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Sass Compiling
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  // Image Optimization
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  // Watch for changes
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // Default task(s).
+  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+
+};</textarea>
 
 			</div>
 		</div>
@@ -181,7 +1052,7 @@
 
 				<!-- Search Form -->
 				<form action="">
-					<input type="text" class="search" name="search" placeholder="search">
+					<input type="text" class="search" name="search" placeholder="search through code by title, description, collections, languages... Whatever">
 					<div class="react-circle"></div>
 				</form>
 
@@ -225,6 +1096,16 @@
 * These will need to be replaced upon migration to rails with appropriate gems
 *** -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/codemirror/lib/codemirror.js"></script>	
+<!-- Importing codemirror modes -->
+<script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
+
+<!-- VIM Binding -->
+<script src="bower_components/codemirror/keymap/vim.js"></script>
+
+<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+
+<!-- Global js build -->
 <script src="javascripts/build/global.min.js"></script>	
 
 <!-- live reload -->

@@ -27,14 +27,14 @@ form {
 		border: solid 1px #ccc;
 		border-top: none; border-bottom: none;
 		padding: 10px 10px 10px 40px;
-		font-size: 1.5em;
-		color: #aaa;
+		font-size: 1em;
+		color: #777;
 		@include transition(all ease 0.5s);
 		&:hover {
 			//background: $cc-lightBlue;
 		}
 		&:focus {
-			color: $cc-lightBlue;
+			color: #333;
 		}
 	}
 }
