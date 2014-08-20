@@ -1,21 +1,28 @@
 .code-window {
-	width: 30%; height: auto;
+	width: 49.8%; height: 300px; max-height: 300px;
+	overflow: auto;
 	background: #fff;
-	margin: 20px 10px;
 	display: inline-block;
-	position: relative;
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 	textarea {
-		top: 30px; left: 0;
+		top: 40px; left: 0;
 		width: 100%;
+		background: #fff !important;
 	}
 	.CodeMirror {
 	  height: auto;
+	  background: #fff !important;
+	  font-family: monospace !important;
+	  & textarea {
+	  	font-family: monospace !important;
+	  }
 	}
 	.code-window-toolbar {
 		width: 100%; height: 35px;
 		position: relative;
+		top: 0;
 		background: #418F9E;
+		cursor: move;
 		.code-window-controls {
 			position: absolute;
 			right: 0;
@@ -44,7 +51,7 @@
 
 	.code-window-info {
 		color: #fff;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		padding: 0px 10px;
 		position: absolute;
 		left: 0;

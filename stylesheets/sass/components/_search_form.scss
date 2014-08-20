@@ -30,6 +30,7 @@ form {
 		font-size: 1em;
 		color: #777;
 		@include transition(all ease 0.5s);
+		@include linear-gradient(top, #f7f7f7, #fff);
 		&:hover {
 			//background: $cc-lightBlue;
 		}

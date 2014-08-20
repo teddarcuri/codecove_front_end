@@ -1,3 +1,10 @@
+* {
+  font-family: 'Proxima Nova';
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -542,6 +549,7 @@ th {
   top: 0;
   z-index: 994;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding-right: 75px;
 }
 #infobar .home-icon, #infobar .sidebar-icon {
   position: relative;
@@ -557,6 +565,12 @@ th {
   height: 100%;
   padding: 7px 20px;
 }
+#infobar .sidebar-icon-blue {
+  background: #45a0b2 !important;
+}
+#infobar .sidebar-icon-blue:hover {
+  background: #326a76 !important;
+}
 #infobar .breadcrumbs {
   vertical-align: top;
   height: 100%;
@@ -566,6 +580,16 @@ th {
   position: relative;
   line-height: 2.5em;
   padding-left: 10px;
+}
+#infobar .layout-options {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+}
+#infobar .layout-options img {
+  margin: 3px 0px;
+  height: 25px;
+  padding: 5px;
 }
 
 #utility-wrap {
@@ -611,7 +635,7 @@ th {
   cursor: pointer;
 }
 #utility-belt .profile-utilities .welcome-message:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: #fff;
 }
 #utility-belt .profile-utilities .welcome-message:hover img[src="/images/gear-icon.svg"] {
   -webkit-transform: rotate(360deg);
@@ -644,6 +668,8 @@ th {
   width: 100%;
   height: 0px;
   background: #f3efef;
+  z-index: 995;
+  position: relative;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -768,13 +794,12 @@ th {
   padding: 20px;
 }
 .search-overlay h1 {
-  font-size: 4em;
+  font-size: 3em;
   padding: 10px 0px;
   color: #444;
   display: block;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
-  text-transform: uppercase;
 }
 .search-overlay h1.search-display {
   position: absolute;
@@ -837,33 +862,44 @@ form input {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  background-color: #f7f7f7;
+  background-image: -webkit-linear-gradient(top, #f7f7f7, white);
+  background-image: linear-gradient(to bottom,#f7f7f7, white);
 }
 form input:focus {
   color: #333;
 }
 
 .code-window {
-  width: 30%;
-  height: auto;
+  width: 49.8%;
+  height: 300px;
+  max-height: 300px;
+  overflow: auto;
   background: #fff;
-  margin: 20px 10px;
   display: inline-block;
-  position: relative;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 .code-window textarea {
-  top: 30px;
+  top: 40px;
   left: 0;
   width: 100%;
+  background: #fff !important;
 }
 .code-window .CodeMirror {
   height: auto;
+  background: #fff !important;
+  font-family: monospace !important;
+}
+.code-window .CodeMirror textarea {
+  font-family: monospace !important;
 }
 .code-window .code-window-toolbar {
   width: 100%;
   height: 35px;
   position: relative;
+  top: 0;
   background: #418F9E;
+  cursor: move;
 }
 .code-window .code-window-toolbar .code-window-controls {
   position: absolute;
@@ -893,7 +929,7 @@ form input:focus {
 }
 .code-window .code-window-info {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 0px 10px;
   position: absolute;
   left: 0;
@@ -907,7 +943,7 @@ form input:focus {
 /* BASICS */
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  font-family: monospace;
+  font-family: monospace !important;
   height: 300px;
 }
 
@@ -1365,26 +1401,32 @@ div.CodeMirror-cursors {
 
 .cm-s-neo .cm-comment {
   color: #75787b;
+  font-family: monospace !important;
 }
 
 .cm-s-neo .cm-keyword, .cm-s-neo .cm-property {
   color: #1d75b3;
+  font-family: monospace !important;
 }
 
 .cm-s-neo .cm-atom, .cm-s-neo .cm-number {
   color: #75438a;
+  font-family: monospace !important;
 }
 
 .cm-s-neo .cm-node, .cm-s-neo .cm-tag {
   color: #9c3328;
+  font-family: monospace !important;
 }
 
 .cm-s-neo .cm-string {
   color: #b35e14;
+  font-family: monospace !important;
 }
 
 .cm-s-neo .cm-variable, .cm-s-neo .cm-qualifier {
   color: #047d65;
+  font-family: monospace !important;
 }
 
 /* Editor styling */
@@ -1418,18 +1460,12 @@ div.CodeMirror-cursors {
   z-index: 1;
 }
 
-* {
-  font-family: 'Proxima Nova';
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .app-container {
   height: 100%;
   width: 100%;
   position: fixed;
   bottom: 0;
+  background: #eee;
   display: -webkit-box;
   display: -moz-box;
   display: box;

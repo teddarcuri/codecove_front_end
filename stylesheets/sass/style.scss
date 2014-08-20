@@ -24,13 +24,6 @@
 // Codemirror themes
 @import "codemirror_themes/neo.scss";	
 
-//////////////////////////////////////////////////////
-// Reset Everything to use Proxima Nova and Box Sizing
-//////////////////////////////////////////////////////
-* {
-	font-family: 'Proxima Nova';
-	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
 
 ////////////////////////////////////////////////
 // This global app wrapper uses Flexbox which 
@@ -42,5 +35,6 @@
 	width: 100%;
 	position: fixed;
 	bottom: 0; 
+	background: #eee;
 	@include display(flex);
 }

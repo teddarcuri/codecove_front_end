@@ -2,9 +2,10 @@
 	width: 100%; height: $infobar-height;
 	background: $cc-grey;
 	position: fixed;
-	top: 0;
+	top: 0; 
 	z-index: $z-infobar;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	padding-right: $sidebar-width;
 	.home-icon, .sidebar-icon {
 		position: relative; 
 		height: 100%;
@@ -20,6 +21,13 @@
 		}
 	}
 
+	.sidebar-icon-blue {
+		background: $cc-lightBlue !important;
+		&:hover {
+			background: $cc-darkBlue !important;
+		}
+	}
+
 	.breadcrumbs {
 		vertical-align: top;
 		height: 100%;
@@ -29,5 +37,16 @@
 		position: relative;
 		line-height: 2.5em;
 		padding-left: 10px;
+	}
+
+	.layout-options {
+		position: absolute;
+		display: inline-block;
+		right: 0px;
+		img {
+			margin: 3px 0px;
+			height: 25px;
+			padding: 5px;
+		}
 	}
 }
