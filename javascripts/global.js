@@ -107,7 +107,6 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 
 // Resizeable
 $(function() {
-
 	$( ".code-window" ).resizable({
 		alsoResize: $(this).find(".CodeMirror"),
 	});

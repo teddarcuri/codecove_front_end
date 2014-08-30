@@ -88,6 +88,7 @@
 						</div>
 					</div>
 
+
 					<textarea name="" class="codemirror-textarea">
  var element = $("this is my elementsgrunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({// Javscript Concatenation
 uglify: {
@@ -99,10 +100,13 @@ build: {").hide();build: {// Javscript Concatenation
 uglify: {
 build: {").hide();
 			        </textarea>
+
+				<!-- <div class="loading-code-window"></div> -->
+
 				</div>
 			</div>';
 
-			for ($i=0; $i < 50; $i++) {
+			for ($i=0; $i < 13; $i++) {
 				echo $code;
 			}
 

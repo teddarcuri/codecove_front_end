@@ -33,6 +33,14 @@
 	border-radius: 10px 10px 0px 0px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 
+	.loading-code-window {
+		height: 100%; width: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		background: url(../images/loading.gif) no-repeat center center rgba(255,255,255,0.9);
+		z-index: $z-console + 1;
+	}
+
 	// Codemirror text area
 	textarea {
 		top: 40px; left: 0;
@@ -57,6 +65,7 @@
 		top: 0;
 		border-radius: 5px 5px 0px 0px;
 		cursor: move;
+		z-index: $z-console + 2;
 		@include linear-gradient(to top, $cc-lightBlue, lighten($cc-darkBlue, 30%) );
 
 		.code-window-controls {
