@@ -16,21 +16,30 @@
 		z-index: 10000082696989879000000 !important;
 		@include transition(all ease 0.75s);
 	}
+
+	// When draggin
+	&.is-dragging .code-window {
+	//	border: solid 2px #eee;
+		box-shadow: 0px 0px 10px $cc-lightBlue;
+	}
 }
 
 .code-window {
 	padding-top: 35px; // to compensate for the toolbar
 	width: 100%; height: 100%;
-	overflow: auto;
 	display: inline-block;
 	border-radius: 5px;
 	position: relative;
-	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+
+	// Codemirror text area
 	textarea {
 		top: 40px; left: 0;
 		width: 100%;
 		background: #fff !important;
 	}
+
 	.CodeMirror {
 	 max-height: 450px;
 	  height: auto;

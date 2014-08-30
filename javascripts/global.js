@@ -88,6 +88,10 @@ $('textarea.codemirror-textarea').each(function(index) {
 // Packery
 var $container = $('#console');
 
+//////////////////////////////////////////////////
+// Code Window Actions
+//////////////////////////////////////////////////
+
 // Draggabilly
 $container.find('.code-window-wrapper').each( function( i, itemElem ) {
   // make element draggable with Draggabilly
@@ -99,7 +103,13 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 
 });
 
-// Code Window Actions
+// Resizeable
+$(function() {
+
+	$( ".code-window" ).resizable({
+		alsoResize: $(this).find(".CodeMirror"),
+	});
+});
 // Set Z-index for overlapping windows
 // This needs revision
 $('.code-window-wrapper').mousedown(function(){
@@ -108,17 +118,17 @@ $('.code-window-wrapper').mousedown(function(){
 });
 
 // 100% Full Console Code
-// $(".maximize").on("click", function(){
-// 	$(this).parents(".code-window-wrapper").animate({
-// 		"position" : "fixed",
-// 		"background" : "#222",
-// 		"top" : "0",
-// 		"left" : "0",
-// 		"height" : "100%",
-// 		"width" : "100%",
-// 		"padding" : "0px"
-// 	});
-// });
+$(".maximize").on("click", function(){
+	$(this).siblings(".CodeMirror").animate({
+		"position" : "fixed",
+		"background" : "#222",
+		"top" : "0",
+		"left" : "0",
+		"height" : "100%",
+		"width" : "100%",
+		"padding" : "0px"
+	});
+});
 
 // Layout toggle
 $(".toggle-col-1").click(function(){

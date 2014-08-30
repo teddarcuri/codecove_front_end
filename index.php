@@ -6,6 +6,7 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -173,6 +174,8 @@
 <!-- Packery -->
 <script src="bower_components/packery/dist/packery.pkgd.js"></script>
 
+<!-- jQuery Resizeable -->
+<script src="/bower_components/jquery-ui/jquery-ui.js"></script>
 
 <!-- Hotkeys! Whoo!!! -->
 <script src="bower_components/jquery.hotkeys/jquery.hotkeys.js"></script>
