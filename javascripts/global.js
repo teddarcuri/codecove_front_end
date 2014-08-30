@@ -105,13 +105,6 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 
 });
 
-// Resizeable
-$(function() {
-	$( ".code-window" ).resizable({
-		alsoResize: $(this).find(".CodeMirror"),
-	});
-});
-
 // Set Z-index for overlapping windows
 // This needs revision
 $('.code-window-wrapper').mousedown(function(){

@@ -211,9 +211,6 @@ g.salute
 <!-- Packery -->
 <script src="bower_components/packery/dist/packery.pkgd.js"></script>
 
-<!-- jQuery Resizeable -->
-<script src="/bower_components/jquery-ui/jquery-ui.js"></script>
-
 <!-- Hotkeys! Whoo!!! -->
 <script src="bower_components/jquery.hotkeys/jquery.hotkeys.js"></script>
 
