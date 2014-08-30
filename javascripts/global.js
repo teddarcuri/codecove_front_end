@@ -19,6 +19,7 @@ function sidebarToggle() {
 // Utility Toggle
 $(".profile-utilities").on("click", function(){
 
+	// Measure all the ui stuff involved
 	var $infoHeight = $("#infobar").height();
 	var $consoleHeight = $("#console").height();
 	var $beltHeight = $("#utility-belt").height();
