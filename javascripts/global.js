@@ -80,7 +80,7 @@ $('textarea.codemirror-textarea').each(function(index) {
     CodeMirror.fromTextArea(document.getElementById('code-' + index), {
             lineNumbers: true,
             tabMode: "indent",
-            mode: "javascript",
+            mode: "ruby",
             theme: "neo",
             //keyMap: "vim"
         }

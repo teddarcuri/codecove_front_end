@@ -78,6 +78,15 @@
 			$code = '
 			<div class="code-window-wrapper">
 				<div class="code-window">
+
+					<textarea name="" class="codemirror-textarea">
+class ApplicationController < ActionController::Base
+  # Prevent CSRF attacks by raising an exception.
+  # For APIs, you may want to use :null_session instead.
+  protect_from_forgery with: :exception
+end
+			        </textarea>
+
 					<div class="code-window-toolbar">
 						<div class="code-window-info">
 							The Gruntfile.js that we used for making our stuff look cool and stuff or whateverThe Gruntfile.js that we used for making our stuff look cool andThe Gruntfile.js that we used for making our stuff look cool andThe Gruntfile.js that we used for making our stuff look cool and
@@ -88,20 +97,8 @@
 						</div>
 					</div>
 
-
-					<textarea name="" class="codemirror-textarea">
- var element = $("this is my elementsgrunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({// Javscript Concatenation
-uglify: {
-build: {// Javscript Concatenation
-uglify: {
-build: {").hide();build: {// Javscript Concatenation
-uglify: {
-build: {").hide();build: {// Javscript Concatenation
-uglify: {
-build: {").hide();
-			        </textarea>
-
 				<!-- <div class="loading-code-window"></div> -->
+
 
 				</div>
 			</div>';
@@ -174,7 +171,7 @@ build: {").hide();
 <!-- VIM Binding -->
 <script src="bower_components/codemirror/keymap/vim.js"></script>
 
-<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+<script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
 
 <!-- Draggabilly -->
 <script src="bower_components/draggabilly/draggabilly.js"></script>

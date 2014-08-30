@@ -1,19 +1,26 @@
 .code-window-wrapper {
 	width: 33.33%;
-	padding: 12px;
+	padding: 15px;
 	float: left;
 	margin: auto;
 	position: relative;
 
+	@include bp(1200) {
+		width: 50%;
+	}
+	@include bp(700) {
+		width: 100%;
+	}
+
 	// Full screen code window
 	&.full-screen {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		height: 100%;
 		width: 100%;
 		padding: 0px;
-		z-index: 10000082696989879000000 !important;
+		z-index: 10000 !important;
 		@include transition(all ease 0.75s);
 	}
 
@@ -25,13 +32,13 @@
 }
 
 .code-window {
-	padding-top: 35px; // to compensate for the toolbar
 	width: 100%; height: 100%;
 	display: inline-block;
 	border-radius: 5px;
 	position: relative;
 	border-radius: 10px 10px 0px 0px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	padding-bottom: 35px;
 
 	.loading-code-window {
 		height: 100%; width: 100%;
@@ -39,6 +46,7 @@
 		top: 0; left: 0;
 		background: url(../images/loading.gif) no-repeat center center rgba(255,255,255,0.9);
 		z-index: $z-console + 1;
+		border-radius: 10px 10px 0px 0px;
 	}
 
 	// Codemirror text area
@@ -49,21 +57,23 @@
 	}
 
 	.CodeMirror {
-	 max-height: 450px;
+	  border-radius: 10px 10px 0px 0px;
+	  max-height: 450px;
 	  height: auto;
+	  padding: 10px;
 	  background: #fff !important;
-	  font-family: monospace !important;
-	  letter-spacing: 1px;
+	  font-family: 'Monaco', sans-serif !important;
+	font-size: 0.8em;
+	  //letter-spacing: 1px;
 
 	  & textarea {
-	  	font-family: monospace !important;
+	  	font-family: 'Monaco', sans-serif !important;
 	  }
 	}
 	.code-window-toolbar {
 		width: 100%; height: 35px;
 		position: absolute;
-		top: 0;
-		border-radius: 5px 5px 0px 0px;
+		bottom: 0;
 		cursor: move;
 		z-index: $z-console + 2;
 		@include linear-gradient(to top, $cc-lightBlue, lighten($cc-darkBlue, 30%) );
@@ -74,7 +84,6 @@
 			background: rgba(0,0,0,0.15);
 			height: 100%; width: auto;
 			padding: 7px;
-			border-radius: 0px 5px 0px 0px;
 			box-shadow: -4px 0px 2px rgba(0,0,0,0.1);
 			cursor: pointer;
 			div {
