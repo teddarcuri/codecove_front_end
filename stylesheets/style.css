@@ -930,7 +930,7 @@ form input:focus {
 }
 @media (max-width: 700px) {
   .code-window-wrapper {
-    width: 100%;
+    width: 100% !important;
   }
 }
 .code-window-wrapper.full-screen {
