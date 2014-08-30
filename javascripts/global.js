@@ -48,6 +48,7 @@ $(".search").on("focus", function(){
 	$(this).on("keyup",function(e){
 		var value = $(".search").val();
 		$(".search-overlay").children("h1").text(value);
+
 	});
 });
 
@@ -66,6 +67,7 @@ $(".search").on("blur", function(){
 	$(this).siblings(".react-circle").removeClass("react");
 	$(".search-overlay").hide();
 });
+
 
 ///////////////////////////////////////////////////
 //*** Come Back and Remove when migrating to back end platform
@@ -119,8 +121,8 @@ $('.code-window-wrapper').mousedown(function(){
 
 // 100% Full Console Code
 $(".maximize").on("click", function(){
-	$(this).siblings(".CodeMirror").animate({
-		"position" : "fixed",
+	$(this).parents(".code-window-wrapper").animate({
+		"position" : "absolute",
 		"background" : "#222",
 		"top" : "0",
 		"left" : "0",

@@ -1,4 +1,5 @@
 @mixin sidebarItemBg($type) {
+	background-image: url(../images/#{$type}-icon.svg), -webkit-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%) ;
 	background-image: url(../images/#{$type}-icon.svg), -o-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%) ;
 	background-image: url(../images/#{$type}-icon.svg), -moz-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%);
 	background-image: url(../images/#{$type}-icon.svg), -ms-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%);

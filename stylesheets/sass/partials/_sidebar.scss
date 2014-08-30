@@ -1,5 +1,6 @@
 // Aqua Sidebar fixed to the left of the screen
 #sidebar {
+	background-image: -webkit-linear-gradient(-89deg, $cc-darkBlue 0%, $cc-lightBlue 96%);
 	background-image: -o-linear-gradient(-89deg, $cc-darkBlue 0%, $cc-lightBlue 96%);
 	background-image: -moz-linear-gradient(-89deg, $cc-darkBlue 0%, $cc-lightBlue 96%);
 	background-image: -ms-linear-gradient(-89deg, $cc-darkBlue 0%, $cc-lightBlue 96%);

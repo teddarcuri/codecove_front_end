@@ -89,16 +89,20 @@
 					</div>
 
 					<textarea name="" class="codemirror-textarea">
-			          var element = $("this is my elementsgrunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({// Javscript Concatenation
-					uglify: {
-						build: {// Javscript Concatenation
-						uglify: {
-						build: {").hide();
+ var element = $("this is my elementsgrunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({// Javscript Concatenation
+uglify: {
+build: {// Javscript Concatenation
+uglify: {
+build: {").hide();build: {// Javscript Concatenation
+uglify: {
+build: {").hide();build: {// Javscript Concatenation
+uglify: {
+build: {").hide();
 			        </textarea>
 				</div>
 			</div>';
 
-			for ($i=0; $i < 10; $i++) {
+			for ($i=0; $i < 50; $i++) {
 				echo $code;
 			}
 
