@@ -111,6 +111,7 @@ $(function() {
 		alsoResize: $(this).find(".CodeMirror"),
 	});
 });
+
 // Set Z-index for overlapping windows
 // This needs revision
 $('.code-window-wrapper').mousedown(function(){
@@ -125,7 +126,7 @@ $(".maximize").on("click", function(){
 		"background" : "#222",
 		"top" : "0",
 		"left" : "0",
-		"height" : "100%",
+		"height" : "auto",
 		"width" : "100%",
 		"padding" : "0px"
 	});

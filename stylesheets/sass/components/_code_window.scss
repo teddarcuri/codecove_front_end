@@ -5,7 +5,7 @@
 	margin: auto;
 	position: relative;
 
-	@include bp(1200) {
+	@include bp(1400) {
 		width: 50%;
 	}
 	@include bp(700) {
@@ -37,7 +37,7 @@
 	border-radius: 5px;
 	position: relative;
 	border-radius: 10px 10px 0px 0px;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
 	padding-bottom: 35px;
 
 	.loading-code-window {
@@ -58,12 +58,12 @@
 
 	.CodeMirror {
 	  border-radius: 10px 10px 0px 0px;
-	  max-height: 450px;
+	  //max-height: 450px;
 	  height: auto;
 	  padding: 10px;
 	  background: #fff !important;
 	  font-family: 'Monaco', sans-serif !important;
-	font-size: 0.8em;
+	  font-size: 0.8em;
 	  //letter-spacing: 1px;
 
 	  & textarea {
