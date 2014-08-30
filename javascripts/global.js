@@ -56,7 +56,6 @@ $(".search").on("mouseover", function(){
 });
 
 $(".search").on("mouseout", function(){
-
 	if ( $(".search-overlay").is(":visible") == false ) {
 		$(this).siblings(".react-circle").removeClass("react");
 	}
@@ -101,12 +100,25 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 });
 
 // Code Window Actions
-
+// Set Z-index for overlapping windows
+// This needs revision
 $('.code-window-wrapper').mousedown(function(){
 	$('.code-window-wrapper').css({"z-index": "992"});
 	$(this).css({"z-index": "993"});
 });
 
+// 100% Full Console Code
+// $(".maximize").on("click", function(){
+// 	$(this).parents(".code-window-wrapper").animate({
+// 		"position" : "fixed",
+// 		"background" : "#222",
+// 		"top" : "0",
+// 		"left" : "0",
+// 		"height" : "100%",
+// 		"width" : "100%",
+// 		"padding" : "0px"
+// 	});
+// });
 
 // Layout toggle
 $(".toggle-col-1").click(function(){

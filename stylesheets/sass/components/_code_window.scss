@@ -4,14 +4,27 @@
 	float: left;
 	margin: auto;
 	position: relative;
+
+	// Full screen code window
+	&.full-screen {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		z-index: 10000082696989879000000 !important;
+		@include transition(all ease 0.75s);
+	}
 }
 
 .code-window {
-	width: 100%; height: 300px; max-height: 300px;
+	padding-top: 35px; // to compensate for the toolbar
+	width: 100%; height: 100%;
 	overflow: auto;
-	background: #fff;
 	display: inline-block;
 	border-radius: 5px;
+	position: relative;
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 	textarea {
 		top: 40px; left: 0;
@@ -19,17 +32,19 @@
 		background: #fff !important;
 	}
 	.CodeMirror {
+	 max-height: 450px;
 	  height: auto;
 	  background: #fff !important;
 	  font-family: monospace !important;
 	  letter-spacing: 1px;
+
 	  & textarea {
 	  	font-family: monospace !important;
 	  }
 	}
 	.code-window-toolbar {
 		width: 100%; height: 35px;
-		position: relative;
+		position: absolute;
 		top: 0;
 		border-radius: 5px 5px 0px 0px;
 		cursor: move;
@@ -43,10 +58,10 @@
 			padding: 7px;
 			border-radius: 0px 5px 0px 0px;
 			box-shadow: -4px 0px 2px rgba(0,0,0,0.1);
+			cursor: pointer;
 			div {
-				cursor: pointer;
 				height: 19px; width: 19px;
-				border: solid 2px rgba(0,0,0,0.2);
+				border: solid 2px rgba(0,0,0,0.15);
 				display: inline-block;
 				border-radius: 200%;
 				margin: 0px 2px;

@@ -26,14 +26,14 @@
 		<div class="sidebar-item collections">
 			<span class="item-name">Collections</span>
 		</div>
-		<div class="sidebar-item collection">
+		<!--<div class="sidebar-item collection">
 			<span class="item-name">Collection: Grunt Setups</span>
 			<span class="single-collection-name">Grunt Setups and</span>
 		</div>
 		<div class="sidebar-item collection">
 			<span class="item-name">Collection: Sass Stuff</span>
 			<span class="single-collection-name">Sass Stuff</span>
-		</div>
+		</div> -->
 
 	</div>
 
@@ -72,7 +72,6 @@
 		</div>
 
 		<div id="main-container">
-
 			<?php
 
 			$code = '
@@ -89,7 +88,11 @@
 					</div>
 
 					<textarea name="" class="codemirror-textarea">
-			          var element = $("this is my elemnts").hide();
+			          var element = $("this is my elementsgrunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({grunt.initConfig({// Javscript Concatenation
+					uglify: {
+						build: {// Javscript Concatenation
+						uglify: {
+						build: {").hide();
 			        </textarea>
 				</div>
 			</div>';
@@ -98,9 +101,7 @@
 				echo $code;
 			}
 
-
 			?>
-
 		</div>
 
 		<!-- Utility Wrap -->
@@ -132,10 +133,10 @@
 			<div id="toolbar-wrap">
 				<div id="toolbar">
 					<div class="tool-item add"><p>Add To Collection</div>
+					<div class="tool-item edit"><p>Edit Collection</div>
 					<div class="tool-item pin"><p>Pin Collection to Sidebar</div>
 					<div class="tool-item info"><p>Collection Information</div>
-					<div class="tool-item edit"><p>Edit Collection</div>
-					<div class="tool-item grid"><p>Snap to Grid</div>
+					<!-- <div class="tool-item grid"><p>Snap to Grid</div> -->
 				</div>
 			</div>
 			<!-- End Toolbar -->
