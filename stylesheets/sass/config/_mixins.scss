@@ -1,8 +1,8 @@
 @mixin sidebarItemBg($type) {
-	background-image: url(../images/#{$type}-icon.svg), -o-linear-gradient(-89deg, #56B2C4 0%, #429DAF 96%) ;
-	background-image: url(../images/#{$type}-icon.svg), -moz-linear-gradient(-89deg, #56B2C4 0%, #429DAF 96%);
-	background-image: url(../images/#{$type}-icon.svg), -ms-linear-gradient(-89deg, #56B2C4 0%, #429DAF 96%);
-	background-image: url(../images/#{$type}-icon.svg), linear-gradient(-179deg, #56B2C4 0%, #429DAF 96%);
+	background-image: url(../images/#{$type}-icon.svg), -o-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%) ;
+	background-image: url(../images/#{$type}-icon.svg), -moz-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%);
+	background-image: url(../images/#{$type}-icon.svg), -ms-linear-gradient(-89deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%);
+	background-image: url(../images/#{$type}-icon.svg), linear-gradient(-179deg, lighten($cc-darkBlue, 20%) 0%, $cc-lightBlue 96%);
 	background-repeat: no-repeat;
 	background-position: center;
 	&:hover {

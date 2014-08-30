@@ -4,11 +4,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // Spin up server
-    connect: {
-      uses_defaults: {}
-    },
-
     // Javscript Concatenation
     uglify: {
       build: {
@@ -64,9 +59,6 @@ module.exports = function(grunt) {
 
   });
 
-  // Serve an HTTP server
-  grunt.loadNpmTasks('grunt-contrib-connect');
-
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
@@ -80,6 +72,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['connect', 'uglify', 'sass', 'watch', 'imagemin']);
+  grunt.registerTask('default', ['uglify', 'sass', 'watch', 'imagemin']);
 
 };

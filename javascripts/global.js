@@ -80,7 +80,7 @@ $('textarea.codemirror-textarea').each(function(index) {
             tabMode: "indent",
             mode: "javascript",
             theme: "neo",
-            keyMap: "vim"
+            //keyMap: "vim"
         }
     );
 });
@@ -91,11 +91,34 @@ var $container = $('#console');
 // Draggabilly
 $container.find('.code-window').each( function( i, itemElem ) {
   // make element draggable with Draggabilly
-  var draggie = new Draggabilly( itemElem, {columnWidth: 80,
-  rowHeight: 80, handle: ".code-window-toolbar"} );
+  var draggie = new Draggabilly( itemElem, 
+  	{columnWidth: 80,
+  	 rowHeight: 80, 
+  	 handle: ".code-window-toolbar"
+  });
 
 });
 
+// Code Window Actions
+
+$('.code-window').mousedown(function(){
+	$('.code-window').css({"z-index": "992"});
+	$(this).css({"z-index": "993"});
+});
+
+
+// Layout toggle
+$(".toggle-col-1").click(function(){
+	$(".code-window-wrapper").css({"width":"100%"});
+});
+
+$(".toggle-col-2").click(function(){
+	$(".code-window-wrapper").css({"width":"50%"});
+});
+
+$(".toggle-col-3").click(function(){
+	$(".code-window-wrapper").css({"width":"33%"});
+});
 
 
 

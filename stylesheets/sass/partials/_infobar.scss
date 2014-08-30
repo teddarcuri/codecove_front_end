@@ -13,13 +13,59 @@
 		cursor: pointer;
 		border-right: solid 1px darken($cc-grey, 10%);
 		&:hover {
-			background: darken($cc-grey, 5%);
+			background: darken($cc-grey, 3%);
 		}
 		img {
-			height: 100%;
+			position: relative;
+			height: 30px;
 			padding: 7px 20px;
 		}
 	}
+	
+	ul {
+		margin: 0px;
+		padding: 0px;
+		position: relative;
+		li {
+			position: relative; 
+			height: 100%;
+			display: inline-block;
+			float: left;
+			padding: 0px;
+			&:hover {
+				ul.sub-menu {
+					display: block !important;
+				}
+			}
+			ul.sub-menu {
+				display: none;
+				position: absolute;
+				background: rgba(255,255,255,0.9);
+				list-style: none;
+				top: $infobar-height;
+				left: 0px;
+				padding: 0px;
+				text-align: left;
+				li {
+					a {
+						min-width: 160px;
+						padding: 10px 10px 10px 10px;
+						display: block;
+						border-bottom: solid 1px #ddd;
+						color: #222;
+						font-size: 0.9em;
+						text-decoration: none;
+						&:hover {
+							color: #fff;
+							background: rgba(0,0,0,0.8);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	
 
 	.sidebar-icon-blue {
 		background: $cc-lightBlue !important;
