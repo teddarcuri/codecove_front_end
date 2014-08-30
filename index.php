@@ -129,7 +129,7 @@ g.salute
 						</div>
 					</div>
 
-				<!-- <div class="loading-code-window"></div> -->
+			<!--	<div class="loading-code-window"></div> -->
 
 
 				</div>
@@ -225,6 +225,6 @@ g.salute
 <script src="javascripts/build/global.min.js"></script>
 
 <!-- live reload -->
-<script src="http://localhost:35729/livereload.js"></script>
+<!--<script src="http://localhost:35729/livereload.js"></script>-->
 </body>
 </html>

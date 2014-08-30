@@ -105,11 +105,14 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 
 });
 
+
 // Set Z-index for overlapping windows
-// This needs revision
+// Increments from 901 each time a window is clicked
+// May be buggy and start overlapping things at 19 clicks
+var zIndexerer = 801;
+
 $('.code-window-wrapper').mousedown(function(){
-	$('.code-window-wrapper').css({"z-index": "992"});
-	$(this).css({"z-index": "993"});
+	$(this).css("z-index", zIndexerer++);
 });
 
 // 100% Full Console Code
