@@ -182,6 +182,13 @@ g.salute
 			<!-- Utility Box -->
 			<div class="utilities">
 
+				<div class="container utility-container">
+					<h1>Happy Saturday, Tedd!</h1>
+					<hr>
+					<h3>Your code</h3>
+					<h1>23 <span>Ruby</span></h1>
+				</div>
+
 			</div>
 		</div>
 		<!-- End Utility Wrap -->
