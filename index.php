@@ -12,8 +12,9 @@
 </head>
 <body>
 
+<!-- Global Application Flexbox Wrapper -->
 <div class="app-container">
-	
+
 <!-- Sidebar -->
 	<div id="sidebar">
 		<div class="sidebar-item add">
@@ -50,23 +51,19 @@
 						<img src="images/home-icon.svg" alt="" />
 					</a>
 					<ul class="sub-menu">
-						<li><a href="#">Add Code</a></li>
+						<li><a href="#">Share Collection</a></li>
 						<li><a href="#">Go Home</a></li>
-						<li><a href="#">Get A Job</a></li>
-						<li><a href="#">The Ocean</a></li>
-						<li><a href="#">Share Code</a></li>
 					</ul>
 				</li>
 			</ul>
-			
-			
+
 			<span class="breadcrumbs">My Collections > Grunt Setups</span>
 
       <div class="layout-options">
         <img class="toggle-col-1" src="images/one-column-icon.svg" alt="">
         <img class="toggle-col-2" src="images/two-column-icon.svg" alt="">
         <img class="toggle-col-3" src="images/three-column-icon.svg" alt="">
-      </div> 
+      </div>
 		</div>
 
 		<div class="search-overlay">
@@ -76,14 +73,14 @@
 
 		<div id="main-container">
 
-			<?php 
+			<?php
 
 			$code = '
 			<div class="code-window-wrapper">
 				<div class="code-window">
 					<div class="code-window-toolbar">
 						<div class="code-window-info">
-							The Gruntfile.js that we used for making our stuff look cool and stuff or whatever
+							The Gruntfile.js that we used for making our stuff look cool and stuff or whateverThe Gruntfile.js that we used for making our stuff look cool andThe Gruntfile.js that we used for making our stuff look cool andThe Gruntfile.js that we used for making our stuff look cool and
 						</div>
 						<div class="code-window-controls">
 							<div class="maximize"></div>
@@ -97,7 +94,7 @@
 				</div>
 			</div>';
 
-			for ($i=0; $i < 10; $i++) { 
+			for ($i=0; $i < 10; $i++) {
 				echo $code;
 			}
 
@@ -105,7 +102,7 @@
 			?>
 
 		</div>
-		
+
 		<!-- Utility Wrap -->
 		<div id="utility-wrap">
 
@@ -138,29 +135,29 @@
 					<div class="tool-item pin"><p>Pin Collection to Sidebar</div>
 					<div class="tool-item info"><p>Collection Information</div>
 					<div class="tool-item edit"><p>Edit Collection</div>
-					<div class="tool-item grid"><p>Snap to Grid</div>					
+					<div class="tool-item grid"><p>Snap to Grid</div>
 				</div>
 			</div>
 			<!-- End Toolbar -->
 
 			<!-- Utility Box -->
 			<div class="utilities">
-				
+
 			</div>
 		</div>
 		<!-- End Utility Wrap -->
-		
+
 	</div>
 	<!-- End Console -->
 </div>
 <!-- End App Container -->
 
-<!-- *** 
-* Bower Components 
+<!-- ***
+* Bower Components
 * These will need to be replaced upon migration to rails with appropriate gems
 *** -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/codemirror/lib/codemirror.js"></script>	
+<script src="bower_components/codemirror/lib/codemirror.js"></script>
 <!-- Importing codemirror modes -->
 <script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
 
@@ -180,7 +177,7 @@
 <script src="bower_components/jquery.hotkeys/jquery.hotkeys.js"></script>
 
 <!-- Global js build -->
-<script src="javascripts/build/global.min.js"></script>	
+<script src="javascripts/build/global.min.js"></script>
 
 <!-- live reload -->
 <script src="http://localhost:35729/livereload.js"></script>

@@ -70,7 +70,7 @@ $(".search").on("blur", function(){
 ///////////////////////////////////////////////////
 //*** Come Back and Remove when migrating to back end platform
 ////////////////////////////////////////////////
-	
+
 // Code Mirror
 // Loop over all textareas with '.codemirror-textarea' class and apply a special id that Codemirror can use
 $('textarea.codemirror-textarea').each(function(index) {
@@ -89,11 +89,11 @@ $('textarea.codemirror-textarea').each(function(index) {
 var $container = $('#console');
 
 // Draggabilly
-$container.find('.code-window').each( function( i, itemElem ) {
+$container.find('.code-window-wrapper').each( function( i, itemElem ) {
   // make element draggable with Draggabilly
-  var draggie = new Draggabilly( itemElem, 
+  var draggie = new Draggabilly( itemElem,
   	{columnWidth: 80,
-  	 rowHeight: 80, 
+  	 rowHeight: 80,
   	 handle: ".code-window-toolbar"
   });
 
@@ -101,8 +101,8 @@ $container.find('.code-window').each( function( i, itemElem ) {
 
 // Code Window Actions
 
-$('.code-window').mousedown(function(){
-	$('.code-window').css({"z-index": "992"});
+$('.code-window-wrapper').mousedown(function(){
+	$('.code-window-wrapper').css({"z-index": "992"});
 	$(this).css({"z-index": "993"});
 });
 
@@ -119,6 +119,3 @@ $(".toggle-col-2").click(function(){
 $(".toggle-col-3").click(function(){
 	$(".code-window-wrapper").css({"width":"33%"});
 });
-
-
-
