@@ -1002,7 +1002,6 @@ form input:focus {
   position: absolute;
   bottom: 0;
   cursor: move;
-  z-index: 902;
   background-color: #45a0b2;
   background-image: -webkit-linear-gradient(bottom, #45a0b2, #7ab9c7);
   background-image: linear-gradient(to top,#45a0b2, #7ab9c7);
