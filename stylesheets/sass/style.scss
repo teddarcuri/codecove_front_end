@@ -18,23 +18,23 @@
 
 // Components
 @import "components/search_form";
-@import "components/code_window";	
+@import "components/code_window";
 @import "components/codemirror";
 
 // Codemirror themes
-@import "codemirror_themes/neo.scss";	
+@import "codemirror_themes/neo.scss";
 
 
 ////////////////////////////////////////////////
-// This global app wrapper uses Flexbox which 
-// allows the sidebar and the main console to 
+// This global app wrapper uses Flexbox which
+// allows the sidebar and the main console to
 // resize fluidly with each other
 ///////////////////////////////////////////////
 .app-container {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	bottom: 0; 
+	bottom: 0;
 	background: #eee;
 	@include display(flex);
 }

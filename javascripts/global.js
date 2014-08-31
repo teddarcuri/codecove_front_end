@@ -98,9 +98,11 @@ var $container = $('#console');
 $container.find('.code-window-wrapper').each( function( i, itemElem ) {
   // make element draggable with Draggabilly
   var draggie = new Draggabilly( itemElem,
-  	{columnWidth: 80,
+  	{
+	 columnWidth: 80,
   	 rowHeight: 80,
-  	 handle: ".code-window-toolbar"
+  	 handle: ".code-window-toolbar",
+	 containment: "#console"
   });
 
 });
