@@ -1,12 +1,14 @@
 #toolbar-wrap {
 	width: 100%; height: auto;
 	position: absolute;
-	top: -50px; 
+	top: -50px;
 	text-align: center;
 	z-index: $z-toolbar;
+	pointer-events: none;
 }
 
 #toolbar {
+	pointer-events: all;
 	width: auto; height: 50px;
 	border-radius: 10px 10px 0px 0px;
 	position: relative;

@@ -9,19 +9,25 @@
 		width: 50%;
 	}
 	@include bp(1000) {
-		width: 100% !important;
+		width: 100%;
 	}
 
 	// Full screen code window
 	&.full-screen {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		height: 100%;
 		width: 100%;
 		padding: 0px;
 		z-index: 10000 !important;
 		@include transition(all ease 0.75s);
+		.code-window {
+			border-radius: 0px;
+			.CodeMirror {
+				height: 100%;
+			}
+		}
 	}
 
 	// When draggin

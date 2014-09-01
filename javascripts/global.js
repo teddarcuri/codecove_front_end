@@ -119,15 +119,7 @@ $('.code-window-wrapper').mousedown(function(){
 
 // 100% Full Console Code
 $(".maximize").on("click", function(){
-	$(this).parents(".code-window-wrapper").animate({
-		"position" : "absolute",
-		"background" : "#222",
-		"top" : "0",
-		"left" : "0",
-		"height" : "auto",
-		"width" : "100%",
-		"padding" : "0px"
-	});
+	$(this).parents(".code-window-wrapper").toggleClass("full-screen");
 });
 
 // Layout toggle
