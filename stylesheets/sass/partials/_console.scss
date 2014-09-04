@@ -7,7 +7,7 @@
 	height: 100%;
 	z-index: $z-console;
 	@include flex(1);
-	@include display(flex);
+	//@include display(flex);
 }
 
 #main-container {
