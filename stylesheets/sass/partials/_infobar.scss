@@ -1,13 +1,14 @@
 #infobar {
+	@include flex-grow(1);
 	width: 100%; height: $infobar-height;
 	background: $cc-grey;
-	position: fixed;
-	top: 0; 
+	position: absolute;
+	top: 0;
 	z-index: $z-infobar;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	padding-right: $sidebar-width;
 	.home-icon, .sidebar-icon {
-		position: relative; 
+		position: relative;
 		height: 100%;
 		display: inline-block;
 		cursor: pointer;
@@ -21,13 +22,13 @@
 			padding: 7px 20px;
 		}
 	}
-	
+
 	ul {
 		margin: 0px;
 		padding: 0px;
 		position: relative;
 		li {
-			position: relative; 
+			position: relative;
 			height: 100%;
 			display: inline-block;
 			float: left;
@@ -64,8 +65,6 @@
 			}
 		}
 	}
-
-	
 
 	.sidebar-icon-blue {
 		background: $cc-lightBlue !important;
