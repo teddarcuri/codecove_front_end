@@ -5,10 +5,10 @@
 	margin: auto;
 	position: relative;
 
-	@include bp(1400) {
+	@include bp(1200) {
 		width: 50%;
 	}
-	@include bp(1000) {
+	@include bp(750) {
 		width: 100%;
 	}
 

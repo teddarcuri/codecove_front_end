@@ -77,7 +77,6 @@
 
 		<div id="main-container">
 			<h1>Active Record Ember</h1>
-			<span>Returned 13 results</span><br />
 			<?php
 
 			$code = '
