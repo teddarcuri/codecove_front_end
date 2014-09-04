@@ -21,6 +21,7 @@
 @import "components/search_form";
 @import "components/code_window";
 @import "components/codemirror";
+@import "components/tile";
 
 // Codemirror themes
 @import "codemirror_themes/neo.scss";
@@ -38,4 +39,11 @@
 	bottom: 0;
 	background: #eee;
 	@include display(flex);
+}
+
+.flex {
+	padding: 0px 20px;
+	@include display(flex);
+	@include justify-content(space-around);
+	@include flex-wrap(wrap);
 }

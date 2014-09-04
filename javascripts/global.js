@@ -87,24 +87,7 @@ $('textarea.codemirror-textarea').each(function(index) {
     );
 });
 
-// Packery
-var $container = $('#console');
 
-//////////////////////////////////////////////////
-// Code Window Actions
-//////////////////////////////////////////////////
-
-// Draggabilly
-$container.find('.code-window-wrapper').each( function( i, itemElem ) {
-  // make element draggable with Draggabilly
-  var draggie = new Draggabilly( itemElem,
-  	{
-	 columnWidth: 80,
-  	 rowHeight: 80,
-  	 handle: ".code-window-toolbar",
-	 containment: "#console"
-  });
-});
 
 
 // Set Z-index for overlapping windows
@@ -134,16 +117,13 @@ $(".maximize").on("click", function(){
 
 // Layout toggle
 $(".toggle-col-1").click(function(){
-	alert("did it");
 	$(".code-window-wrapper").css({"width":"100%"});
 });
 
 $(".toggle-col-2").click(function(){
-	alert("did it");
 	$(".code-window-wrapper").css({"width":"50%"});
 });
 
 $(".toggle-col-3").click(function(){
-	alert("did it");
 	$(".code-window-wrapper").css({"width":"33%"});
 });

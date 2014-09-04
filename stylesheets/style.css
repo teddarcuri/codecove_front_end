@@ -963,6 +963,9 @@ form input:focus {
   float: left;
   margin: auto;
   position: relative;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 @media (max-width: 1200px) {
   .code-window-wrapper {
@@ -1516,6 +1519,32 @@ div.CodeMirror-cursors {
     visibility: hidden;
   }
 }
+.tile {
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
+  background: #eee;
+  width: 14%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 150px;
+}
+.tile:hover {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background: #45A0B2;
+}
+.tile:hover span {
+  color: #fff;
+}
+.tile span {
+  font-size: 1.5em;
+  color: #bbb;
+  font-weight: 700;
+}
+
 /* neo theme for codemirror */
 /* Color scheme */
 .cm-s-neo.CodeMirror {
@@ -1600,6 +1629,33 @@ div.CodeMirror-cursors {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */

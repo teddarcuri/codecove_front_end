@@ -4,6 +4,7 @@
 	float: left;
 	margin: auto;
 	position: relative;
+	@include transition(all ease 0.5s);
 
 	@include bp(1200) {
 		width: 50%;
