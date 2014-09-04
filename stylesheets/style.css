@@ -573,7 +573,22 @@ h1.search-display {
   top: 0;
   z-index: 975;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  padding-right: 75px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
 }
 #infobar .home-icon, #infobar .sidebar-icon {
   position: relative;
@@ -594,6 +609,7 @@ h1.search-display {
   margin: 0px;
   padding: 0px;
   position: relative;
+  height: 100%;
 }
 #infobar ul li {
   position: relative;
@@ -645,14 +661,21 @@ h1.search-display {
   padding-left: 10px;
 }
 #infobar .layout-options {
-  position: absolute;
   display: inline-block;
-  right: 0px;
+  height: 100%;
+  text-align: right;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
 }
 #infobar .layout-options img {
-  margin: 3px 0px;
-  height: 25px;
-  padding: 5px;
+  cursor: pointer;
+  height: 100%;
+  padding: 8px;
+}
+#infobar .layout-options img:hover {
+  background: #ccc;
 }
 
 #utility-wrap {
