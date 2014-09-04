@@ -6,7 +6,6 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -193,13 +192,12 @@ g.salute
 *** -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/codemirror/lib/codemirror.js"></script>
-<!-- Importing codemirror modes -->
+
+<!-- Codemirror modes -->
 <script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
 
 <!-- VIM Binding -->
 <script src="bower_components/codemirror/keymap/vim.js"></script>
-
-<script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
 
 <!-- Packery -->
 <script src="bower_components/packery/dist/packery.pkgd.js"></script>

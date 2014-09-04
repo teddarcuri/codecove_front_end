@@ -108,8 +108,8 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
 
 
 // Set Z-index for overlapping windows
-// Increments from 901 each time a window is clicked
-// May be buggy and start overlapping things at 19 clicks
+// Increments from 801 each time a window is clicked
+// May be buggy and start overlapping things at 91 clicks because of next z-indexed item
 var zIndexerer = 801;
 
 $('.code-window-wrapper').mousedown(function(){
@@ -134,13 +134,16 @@ $(".maximize").on("click", function(){
 
 // Layout toggle
 $(".toggle-col-1").click(function(){
+	alert("did it");
 	$(".code-window-wrapper").css({"width":"100%"});
 });
 
 $(".toggle-col-2").click(function(){
+	alert("did it");
 	$(".code-window-wrapper").css({"width":"50%"});
 });
 
 $(".toggle-col-3").click(function(){
+	alert("did it");
 	$(".code-window-wrapper").css({"width":"33%"});
 });
