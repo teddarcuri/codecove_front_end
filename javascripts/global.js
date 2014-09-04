@@ -104,7 +104,6 @@ $container.find('.code-window-wrapper').each( function( i, itemElem ) {
   	 handle: ".code-window-toolbar",
 	 containment: "#console"
   });
-
 });
 
 
@@ -119,7 +118,18 @@ $('.code-window-wrapper').mousedown(function(){
 
 // 100% Full Console Code
 $(".maximize").on("click", function(){
-	$(this).parents(".code-window-wrapper").toggleClass("full-screen");
+
+	// Get the console dimensions
+	var consoleH = $("#console").height() - $("#utility-belt").height() - 30;
+
+	// Expand the parent window
+	$(this).parents(".code-window-wrapper").animate({
+			"height" : consoleH,
+			"width" : "100%",
+			"top" : "0px",
+			"left" : "0px"
+	}).addClass("full-screen");
+
 });
 
 // Layout toggle

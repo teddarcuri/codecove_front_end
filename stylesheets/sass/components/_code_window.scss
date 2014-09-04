@@ -15,18 +15,11 @@
 	// Full screen code window
 	&.full-screen {
 		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
 		padding: 0px;
-		z-index: 10000 !important;
-		@include transition(all ease 0.75s);
-		.code-window {
+		z-index: 96909 !important;
+		.CodeMirror {
 			border-radius: 0px;
-			.CodeMirror {
-				height: 100%;
-			}
+			height: 100%;
 		}
 	}
 
@@ -65,7 +58,7 @@
 	.CodeMirror {
 	  border-radius: 10px 10px 0px 0px;
 	  //max-height: 450px;
-	  height: auto;
+	  height: 100%;
 	  padding: 10px;
 	  background: #fff !important;
 	  font-family: 'Monaco', sans-serif !important;

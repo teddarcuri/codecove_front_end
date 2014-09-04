@@ -2,6 +2,7 @@
 	width: 100%; height: auto;
 	position: absolute;
 	bottom: 0;
+    z-index: $z-utilitybelt;
 }
 
 .utility-container {
@@ -35,6 +36,9 @@
 		color: $cc-darkBlue;
 		display: inline-block;
 		height: 100%; width: auto;
+        @include bp (900) {
+            display: none;
+        }
 		.welcome-message {
 			display: inline-block;
 			height: 100%;

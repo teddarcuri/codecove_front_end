@@ -10,6 +10,10 @@
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico">
+
 </head>
 <body>
 
@@ -68,11 +72,12 @@
 		</div>
 
 		<div class="search-overlay">
-			<span>Searching For:</span>
 			<h1 class="search-display">Search</h1>
 		</div>
 
 		<div id="main-container">
+			<h1>Active Record Ember</h1>
+			<span>Returned 13 results</span><br />
 			<?php
 
 			$code = '
@@ -196,9 +201,6 @@ g.salute
 <script src="bower_components/codemirror/keymap/vim.js"></script>
 
 <script src="bower_components/codemirror/mode/ruby/ruby.js"></script>
-
-<!-- Draggabilly -->
-<script src="bower_components/draggabilly/draggabilly.js"></script>
 
 <!-- Packery -->
 <script src="bower_components/packery/dist/packery.pkgd.js"></script>
