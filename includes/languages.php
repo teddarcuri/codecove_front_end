@@ -19,6 +19,10 @@
     </div>
 
     <div class="tile">
+    <span>Python</span>
+    </div>
+
+    <div class="tile">
     <span>Css</span>
     </div>
 
@@ -27,8 +31,23 @@
     </div>
 
     <div class="tile">
-    <span>Bash</span>
+    <span>Java</span>
     </div>
-    
+
+    <div class="tile">
+    <span>jQuery</span>
+    </div>
+
+    <div class="tile">
+    <span>JSON</span>
+    </div>
+
+    <div class="tile">
+    <span>Swift</span>
+    </div>
+
+    <div class="tile">
+    <span>Objective C</span>
+    </div>
 
 </div>

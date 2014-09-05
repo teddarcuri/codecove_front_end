@@ -1004,7 +1004,7 @@ form input:focus {
 
 .code-window-wrapper {
   width: 33.33%;
-  padding: 10px;
+  padding: 15px;
   float: left;
   margin: auto;
   position: relative;
@@ -1041,7 +1041,8 @@ form input:focus {
   display: inline-block;
   border-radius: 5px;
   position: relative;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   padding-bottom: 35px;
 }
@@ -1078,6 +1079,7 @@ form input:focus {
   position: absolute;
   bottom: 0;
   cursor: move;
+  border-radius: 0px 0px 10px 10px;
   background-color: #45a0b2;
   background-image: -webkit-linear-gradient(bottom, #45a0b2, #7ab9c7);
   background-image: linear-gradient(to top,#45a0b2, #7ab9c7);
@@ -1577,18 +1579,24 @@ div.CodeMirror-cursors {
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
   background: #eee;
   width: 14%;
-  height: auto;
+  height: 50px;
   margin: 5px;
   border-radius: 10px;
   padding: 0px;
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  line-height: 150px;
+  line-height: 50px;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
 }
 .tile:hover {
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
-  background: #45a0b2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
+  background-color: #68b0bf;
+  background-image: -webkit-linear-gradient(top, #68b0bf, #45a0b2);
+  background-image: linear-gradient(to bottom,#68b0bf, #45a0b2);
 }
 .tile:hover span {
   color: #fff;
