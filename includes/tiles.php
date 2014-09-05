@@ -5,28 +5,10 @@ $code = '
   <div class="code-window">
 
     <textarea name="" class="codemirror-textarea">
-class ApplicationController < ActionController::Base
-# Prevent CSRF attacks by raising an exception.
-# For APIs, you may want to use :null_session instead.
-protect_from_forgery with: :exception
-end
+Hola! Bienvenidos, Codecove!
 
-# The Greeter class
-class Greeter
-def initialize(name)
-@name = name.capitalize
-end
-
-def salute
-puts "Hello #{@name}!"
-end
-end
-
-# Create a new object
-g = Greeter.new("world")
-
-# Output "Hello World!"
-g.salute
+Just kidding!
+Welcome to Codecove.
         </textarea>
 
     <div class="code-window-toolbar">
@@ -45,7 +27,7 @@ g.salute
   </div>
 </div>';
 
-for ($i=0; $i < 10; $i++) {
+for ($i=0; $i < 1; $i++) {
   //echo "<h3>Code#{$i}</h3>";
   echo $code;
 }
