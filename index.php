@@ -64,7 +64,7 @@
 				</li>
 			</ul>
 
-			<span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span>
+			<span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers > Ruby Active Record Serializers or something</span>
 
       <div class="layout-options">
         <div class="one-column"></div>
@@ -78,7 +78,7 @@
 		</div>
 
 		<div id="console-container">
-			<?php include "includes/languages.php"; ?>
+			<?php include "includes/tiles.php"; ?>
 		</div>
 
 		<!-- End Main Container -->
