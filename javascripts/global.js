@@ -87,9 +87,6 @@ $('textarea.codemirror-textarea').each(function(index) {
     );
 });
 
-
-
-
 // Set Z-index for overlapping windows
 // Increments from 801 each time a window is clicked
 // May be buggy and start overlapping things at 91 clicks because of next z-indexed item

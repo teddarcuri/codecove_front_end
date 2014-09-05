@@ -31,8 +31,9 @@ form {
 		color: #777;
 		@include transition(all ease 0.5s);
 		@include linear-gradient(top, #f7f7f7, #fff);
+
 		&:hover {
-			//background: $cc-lightBlue;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
 		}
 		&:focus {
 			color: #333;

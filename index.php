@@ -30,15 +30,18 @@
 		<div class="sidebar-item collections">
 			<span class="item-name">Collections</span>
 		</div>
-		<!--<div class="sidebar-item collection">
-			<span class="item-name">Collection: Grunt Setups</span>
+
+		<!-- User Saved Collections -->
+		<hr class="collection-divider">
+
+		<div class="sidebar-item collection">
+			<span class="item-name">Grunt Setups</span>
 			<span class="single-collection-name">Grunt Setups and</span>
 		</div>
 		<div class="sidebar-item collection">
-			<span class="item-name">Collection: Sass Stuff</span>
+			<span class="item-name">Sass Stuff</span>
 			<span class="single-collection-name">Sass Stuff</span>
-		</div> -->
-
+		</div>
 	</div>
 
 	<!-- Console -->
@@ -61,7 +64,7 @@
 				</li>
 			</ul>
 
-			<span class="breadcrumbs">Home > My Collections > Ruby Activerecord serilizers</span>
+			<span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span>
 
       <div class="layout-options">
         <div class="one-column"></div>
@@ -74,7 +77,7 @@
 			<h1 class="search-display">Search</h1>
 		</div>
 
-		<div id="main-container">
+		<div id="console-container">
 			<!-- <?php include "includes/languages.php"; ?> -->
 			<?php include "includes/tiles.php"; ?>
 		</div>
@@ -91,7 +94,7 @@
 
 				<!-- Search Form -->
 				<form action="">
-					<input type="text" class="search" name="search" placeholder="search through code by title, description, collections, languages... Whatever">
+					<input type="text" class="search" name="search" placeholder="SEARCH">
 					<div class="react-circle"></div>
 				</form>
 
@@ -122,10 +125,7 @@
 			<div class="utilities">
 
 				<div class="container utility-container">
-					<h1>Happy Saturday, Tedd!</h1>
-					<hr>
-					<h3>Your code</h3>
-					<h1>23 <span>Ruby</span></h1>
+					<h1>Lets fix this up</h1>
 				</div>
 
 			</div>

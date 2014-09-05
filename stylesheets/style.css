@@ -427,6 +427,7 @@ h1.search-display {
   width: 75px;
   position: relative;
   z-index: 999;
+  overflow: hidden;
 }
 #sidebar .sidebar-item {
   display: block;
@@ -560,6 +561,10 @@ h1.search-display {
   border-width: 10px;
   margin-top: -10px;
 }
+#sidebar hr.collection-divider {
+  margin: 0px;
+  border: solid 7px #326a76;
+}
 
 #infobar {
   -webkit-flex-grow: 1;
@@ -675,7 +680,7 @@ h1.search-display {
   display: inline-block;
   cursor: pointer;
   height: 100%;
-  width: 50px;
+  width: 40px;
   padding: 10px;
 }
 #infobar .layout-options div.one-column {
@@ -909,14 +914,18 @@ h1.search-display {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  background-color: #fefefe;
+  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: linear-gradient(to bottom,#fefefe, #eeeeee);
 }
 
-#main-container {
+#console-container {
   width: 100%;
   height: 100%;
   margin-top: 30px;
   position: relative;
   overflow: auto;
+  padding: 0px 20px;
   padding-bottom: 100px;
 }
 
@@ -984,13 +993,16 @@ form input {
   background-image: -webkit-linear-gradient(top, #f7f7f7, white);
   background-image: linear-gradient(to bottom,#f7f7f7, white);
 }
+form input:hover {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 form input:focus {
   color: #333;
 }
 
 .code-window-wrapper {
   width: 33.33%;
-  padding: 15px;
+  padding: 25px;
   float: left;
   margin: auto;
   position: relative;
