@@ -563,7 +563,7 @@ h1.search-display {
 }
 #sidebar hr.collection-divider {
   margin: 0px;
-  border: solid 7px #326a76;
+  border: solid 5px #326a76;
 }
 
 #infobar {
@@ -914,9 +914,10 @@ h1.search-display {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-color: #fefefe;
-  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
-  background-image: linear-gradient(to bottom,#fefefe, #eeeeee);
+  background-color: #dddddd;
+  background-image: -webkit-linear-gradient(-315deg, #dddddd, white);
+  background-image: linear-gradient(45deg,#dddddd, white);
+  background: url(../images/wavegrid.png);
 }
 
 #console-container {

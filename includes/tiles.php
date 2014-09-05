@@ -45,7 +45,7 @@ g.salute
   </div>
 </div>';
 
-for ($i=0; $i < 33; $i++) {
+for ($i=0; $i < 10; $i++) {
   //echo "<h3>Code#{$i}</h3>";
   echo $code;
 }
