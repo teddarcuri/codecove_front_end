@@ -76,7 +76,7 @@
 
 		<div id="main-container">
 			<!-- <?php include "includes/languages.php"; ?> -->
-			<?php include "includes/tiles.php"; ?>
+			<?php include "includes/languages.php"; ?>
 		</div>
 
 		<!-- End Main Container -->

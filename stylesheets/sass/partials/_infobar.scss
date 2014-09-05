@@ -49,6 +49,7 @@
 				left: 0px;
 				padding: 0px;
 				text-align: left;
+
 				li {
 					a {
 						min-width: 160px;
@@ -96,7 +97,8 @@
 			height: 100%;
 			padding: 8px;
 			&:hover {
-				background: #ccc;
+				box-shadow: inset 0px 0px 2px rgba(0,0,0,0.4);
+				background: #fff;
 			}
 		}
 	}
