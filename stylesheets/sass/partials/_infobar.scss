@@ -87,18 +87,34 @@
 		padding-left: 10px;
 	}
 
+	// Iterate over the tile layout icons
+	$icons: "one-column", "two-column", "three-column";
+
 	.layout-options {
 		display: inline-block;
 		height: 100%;
 		text-align: right; // This makes the icons display on the right without having to float them
 		@include flex-grow(1);
-		img {
+		padding-right: 10px;
+		div {
+			position: relative;
+			display: inline-block;
 			cursor: pointer;
 			height: 100%;
-			padding: 8px;
-			&:hover {
-				box-shadow: inset 0px 0px 2px rgba(0,0,0,0.4);
-				background: #fff;
+			width: 50px;
+			padding: 10px;
+
+			@each $column-icon in $icons {
+				&.#{$column-icon} {
+					background: url(../images/#{$column-icon}-icon.svg) no-repeat center center;
+					background-size: 22px;
+					&:hover, &.active {
+						background: #fff;
+						background: url(../images/#{$column-icon}-icon-mo.svg) no-repeat center center #fff;
+						background-size: 22px;
+						box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+					}
+				}
 			}
 		}
 	}

@@ -64,9 +64,9 @@
 			<span class="breadcrumbs">Home > My Collections > Ruby Activerecord serilizers</span>
 
       <div class="layout-options">
-        <img class="toggle-col-1" src="images/one-column-icon.svg" alt="">
-        <img class="toggle-col-2" src="images/two-column-icon.svg" alt="">
-        <img class="toggle-col-3" src="images/three-column-icon.svg" alt="">
+        <div class="one-column"></div>
+		<div class="two-column"></div>
+		<div class="three-column active"></div>
       </div>
 		</div>
 
@@ -76,7 +76,7 @@
 
 		<div id="main-container">
 			<!-- <?php include "includes/languages.php"; ?> -->
-			<?php include "includes/languages.php"; ?>
+			<?php include "includes/tiles.php"; ?>
 		</div>
 
 		<!-- End Main Container -->

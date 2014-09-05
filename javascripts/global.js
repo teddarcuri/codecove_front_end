@@ -116,14 +116,20 @@ $(".maximize").on("click", function(){
 });
 
 // Layout toggle
-$(".toggle-col-1").click(function(){
+$(".one-column").click(function(){
 	$(".code-window-wrapper").css({"width":"100%"});
+	$(".layout-options div").removeClass("active");
+	$(this).addClass("active");
 });
 
-$(".toggle-col-2").click(function(){
+$(".two-column").click(function(){
 	$(".code-window-wrapper").css({"width":"50%"});
+	$(".layout-options div").removeClass("active");
+	$(this).addClass("active");
 });
 
-$(".toggle-col-3").click(function(){
+$(".three-column").click(function(){
 	$(".code-window-wrapper").css({"width":"33%"});
+	$(".layout-options div").removeClass("active");
+	$(this).addClass("active");
 });

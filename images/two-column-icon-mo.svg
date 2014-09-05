@@ -5,13 +5,11 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup" fill="#BEBEBE">
-            <g id="Rectangle-1" sketch:type="MSShapeGroup">
-                <rect x="0" y="0" width="153" height="124" rx="8"></rect>
-                <rect x="0" y="154" width="153" height="124" rx="8"></rect>
-                <rect x="194" y="0" width="153" height="124" rx="8"></rect>
-                <rect x="194" y="154" width="153" height="124" rx="8"></rect>
-            </g>
+        <g id="Group" sketch:type="MSLayerGroup" fill="#5ABACE">
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="0" y="0" width="153" height="124" rx="8"></rect>
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="0" y="154" width="153" height="124" rx="8"></rect>
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="194" y="0" width="153" height="124" rx="8"></rect>
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="194" y="154" width="153" height="124" rx="8"></rect>
         </g>
     </g>
 </svg>
